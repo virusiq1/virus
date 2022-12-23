@@ -1,7 +1,7 @@
 #!/bin/bash
 
 _set_bot () {
-    echo "جاري تنزيل اكواد سورس فايروس1 2"
+    echo "جاري تنزيل اكواد سورس فايروس1 3"
     wget -q https://github.com/virusiq1/VirusMusic/archive/main.zip -O "virus.zip"
     echo " تفريغ البيانات "
     unzip "virus.zip"
