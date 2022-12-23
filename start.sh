@@ -10,9 +10,9 @@ _set_bot () {
     echo " تم التفريغ "
     echo " يتم التنظيف "
     rm -rf "$zippath"
-    sleep(5)
+    sleep 5
     python3 setup/updater.py requirements.txt requirements.txt
-    sleep(5)
+    sleep 5
     cd "VirusMusic-main"
 
     
