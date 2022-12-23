@@ -1,15 +1,12 @@
 #!/bin/bash
 
 _set_bot () {
-    local zippath
-    zippath="virus.zip"
-    echo "جاري تنزيل اكواد سورس فايروس "
-    wget -q https://github.com/virusiq1/VirusMusic/archive/main.zip -O "$zippath"
+    echo "جاري تنزيل اكواد سورس فايروس1 "
+    wget -q https://github.com/virusiq1/VirusMusic/archive/main.zip -O "virus.zip"
     echo " تفريغ البيانات "
-    unzip -qq "$zippath"
+    unzip "virus.zip"
     echo " تم التفريغ "
     echo " يتم التنظيف "
-    rm -rf "$zippath"
     sleep 5
     python3 setup/updater.py requirements.txt requirements.txt
     sleep 5
